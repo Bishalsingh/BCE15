@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Properties</h2>
+
+<p>The length property returns the length of a string:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ locate over demo locate";
+var pos = str.indexOf("locate");
+var posIndex = str.lastIndexOf("locate");
+var posIndex1 = str.lastIndexOf("locate", 35);
+var pos1 = str.search("locate");
+document.getElementById("demo").innerHTML = txt.length;
+/*
+slice(start, end)
+substring(start, end)
+substr(start, length) */
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7,13);
+var res1 = str.slice(-12, -6);
+var res2 = str.slice(7);
+var res3 = str.substring(7, 13);
+var res4 = str.substr(7, 6);
+var res5 = str.substr(7);
+var n = str.replace("Apple", "Cosmos");
+var text2 = str.toUpperCase();
+var text1 = "Hello";
+var text2 = "World";
+var text3 = text1.concat(" ", text2);
+document.getElementById("demo1").innerHTML = res; 
+</script>
+
+</body>
+</html>
+
