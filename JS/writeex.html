@@ -8,12 +8,12 @@ Writing into the browser console, using console.log().
 <html>
 <body>
 
-<h2>My First Web Page</h2>
-<p>My first paragraph.</p>
+<h2 id="demo1">My First Web Page</h2>
+<p id="demo">My first paragraph.</p>
 
 <script>
 document.write(5 + 6);
-document.getElementById("demo").innerHTML = 5 + 6;
+document.getElementById("demo1").innerHTML = 5 + 6;
 console.log(5 + 16);
 </script>
 <button type="button" onclick="document.write(5 + 6)">Try it</button>
