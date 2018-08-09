@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+
+getFullYear()	Get the year as a four digit number (yyyy)
+getMonth()	Get the month as a number (0-11)
+getDate()	Get the day as a number (1-31)
+getHours()	Get the hour (0-23)
+getMinutes()	Get the minute (0-59)
+getSeconds()	Get the second (0-59)
+getMilliseconds()	Get the millisecond (0-999)
+getTime()	Get the time (milliseconds since January 1, 1970)
+getDay()	Get the weekday as a number (0-6)
+Date.now()	Get the time. ECMAScript 5.
+
+-->
+<html>
+<body>
+
+<h2>Array Sort</h2>
+
+<p>lowest number is <span id="demo"></span>.</p>
+<p>Highest number is <span id="demo1"></span>.</p>
+
+<script>
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = myArrayMin(points);
+document.getElementById("demo1").innerHTML = myArrayMax(points);
+
+function myArrayMin(arr) {
+    return Math.min.apply(null, arr);
+}
+function myArrayMax(arr) {
+    return Math.max.apply(null, arr);
+}
+</script>
+
+</body>
+</html>

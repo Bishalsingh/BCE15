@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Array Sort</h2>
+
+<button onclick="myFunction1()">Sort Alphabetically</button>
+<button onclick="myFunction2()">Sort Numerically</button>
+<button onclick="randomSort()">Sort Random</button>
+
+<p id="demo"></p>
+<p id="random"></p>
+
+<script>
+var points = [4, 10, 1, 5, 15, 211];
+document.getElementById("demo").innerHTML = points;    
+
+function myFunction1() {
+    points.sort();
+    document.getElementById("demo").innerHTML = points;
+}
+function myFunction2() {
+    points.sort(function(a, b){return a - b});
+    document.getElementById("demo").innerHTML = points;
+}
+function randomSort() {
+   points.sort(function(a, b){return 0.5 - Math.random()});
+    document.getElementById("random").innerHTML = points;
+}
+</script>
+
+</body>
+</html>

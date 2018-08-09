@@ -1,0 +1,43 @@
+<!--
+screen.width
+screen.height
+screen.availWidth
+screen.availHeight
+screen.colorDepth
+screen.pixelDepth
+
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="width"></p>
+<p id="height"></p>
+<p id="availWidth"></p>
+<p id="availHeight"></p>
+<p id="colorDepth"></p>
+<p id="pixelDepth"></p>
+
+<script>
+document.getElementById("width").innerHTML = 
+"Screen width is " + screen.width;
+
+document.getElementById("height").innerHTML = 
+"Screen height is " + screen.height;
+
+document.getElementById("availWidth").innerHTML = 
+"Screen avail width is " + screen.availWidth;
+
+document.getElementById("availHeight").innerHTML = 
+"Screen avail height is " + screen.availHeight;
+
+document.getElementById("colorDepth").innerHTML = 
+"Screen color depth is " + screen.colorDepth;
+
+document.getElementById("pixelDepth").innerHTML = 
+"Screen pixel depth is " + screen.pixelDepth;
+</script>
+
+</body>
+</html>

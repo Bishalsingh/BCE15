@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The Navigator Object</h2>
+
+<p>The cookieEnabled property returns true if cookies are enabled:</p>
+
+<p id="status"></p>
+<p id="name"></p>
+<p id="codename"></p>
+<p id="version"></p>
+<p id="platform"></p>
+<p id="language"></p>
+<p id="onLine"></p>
+<p id="javaEnabled"></p>
+<p id="product"></p>
+<p id="agent"></p>
+
+<script>
+document.getElementById("status").innerHTML =
+"navigator.cookieEnabled is " + navigator.cookieEnabled;
+
+document.getElementById("name").innerHTML =
+"navigator.appName is " + navigator.appName;
+
+document.getElementById("codename").innerHTML =
+"navigator.appCodeName is " + navigator.appCodeName;;
+
+document.getElementById("product").innerHTML =
+"navigator.product is " + navigator.product;
+
+document.getElementById("version").innerHTML =
+"navigator.appVersion is " + navigator.appVersion;
+
+document.getElementById("agent").innerHTML =
+"navigator.userAgent is " + navigator.userAgent;
+
+document.getElementById("platform").innerHTML =
+"navigator.platform is " + navigator.platform;
+
+document.getElementById("language").innerHTML =
+"navigator.language is " + navigator.language;
+
+document.getElementById("onLine").innerHTML =
+"navigator.onLine is " + navigator.onLine;
+
+document.getElementById("javaEnabled").innerHTML =
+"navigator.javaEnabled() is " + navigator.javaEnabled();
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!-- window.location.href returns the href (URL) of the current page
+window.location.hostname returns the domain name of the web host
+window.location.pathname returns the path and filename of the current page
+window.location.protocol returns the web protocol used (http: or https:)
+window.location.assign loads a new document -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js</h2>
+
+<h3>The window.location object</h3>
+
+<p id="hrefname"></p>
+<p id="hostname"></p>
+<p id="pathname"></p>
+<p id="protocol"></p>
+<p id="port"></p>
+
+<script>
+document.getElementById("hrefname").innerHTML = 
+"Full URL:<br>" + window.location.href;
+
+document.getElementById("hostname").innerHTML = 
+"Hostname:<br>" + window.location.hostname;
+
+document.getElementById("pathname").innerHTML = 
+"Path:<br>" + window.location.pathname;
+
+document.getElementById("protocol").innerHTML = 
+"Path:<br>" + window.location.protocol;
+
+document.getElementById("port").innerHTML = 
+"Port:<br>" + window.location.port;
+</script>
+
+</body>
+</html>
